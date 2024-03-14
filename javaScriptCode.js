@@ -44,10 +44,10 @@ function getResult(computerSelection,playerSelection){
     playGame(ps,cs);
 }
 
-function playGame(){
-    if(playerScore>computerScore){
+function playGame(pScore,cScore){
+    if(pScore>cScore){
         console.log("you win");
-    } else if(playerScore<computerScore){
+    } else if(pScore<cScore){
         console.log("you lose");
     } else{
         console.log("you tie!");
